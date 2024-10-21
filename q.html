@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph and Button Task</title>
+    <style>
+        .highlight {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="para1"> лалала</p>
+    <p id="para2">блаблабла.</p>
+    <p id="para3">бебебе</p>
+
+    <button onclick="changeText()">кнопочка</button>
+
+    <script>
+        function changeText() {
+            let para = document.getElementById("para2");
+            para.innerText = "хахаха";
+            para.classList.toggle("highlight");
+        }
+    </script>
+
+</body>
+</html>
